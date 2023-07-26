@@ -90,16 +90,16 @@ def displayTowers(towers):
 
     # Вывести три башни:
     for level in range(TOTAL_DISKS, -1, -1):
-        for tower in (towers["A"], towers["B", towers["C"]]):
+        for tower in (towers["A"], towers["B"], towers["C"]):
             if level >= len(tower):
-                dispayDisk(0)  # Вывести пустой стержень без диска
+                displayDisk(0)  # Вывести пустой стержень без диска
             else:
                 displayDisk(tower[level])  # Вывести диск
         print()
     
     # вывести обозначение башен A, B и С:
     emptySpace = " " * (TOTAL_DISKS)
-    print("{0} A{0}{0} B{0}{0} C\n".format(emptySpace))
+    print("{0}A{0}{0}B{0}{0}C\n".format(emptySpace))
 
 def displayDisk(width):
     """ Вывлодит диск заданной ширины, Ширина 0 означает отсудствие диска."""
@@ -115,14 +115,3 @@ def displayDisk(width):
 
 if __name__ == "__main__":
     main()
-
-
-
-
-        
-
-
-
-
-
-
