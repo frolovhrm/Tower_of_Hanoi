@@ -99,7 +99,7 @@ def displayTowers(towers):
     
     # вывести обозначение башен A, B и С:
     emptySpace = " " * (TOTAL_DISKS)
-    print("{0}A{0}{0}B{0}{0}C\n".format(emptySpace))
+    print("{0}A{0}{0} B{0}{0} C\n".format(emptySpace))
 
 def displayDisk(width):
     """ Вывлодит диск заданной ширины, Ширина 0 означает отсудствие диска."""
